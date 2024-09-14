@@ -1,5 +1,6 @@
 'use client'
 import Image from "next/image";
+// @ts-expect-error todo
 import { usePollinationsText, usePollinationsImage, PollinationsMarkdown } from "@pollinations/react";
 
 export default function Home() {
