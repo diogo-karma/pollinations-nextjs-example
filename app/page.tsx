@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-import { usePollinationsText, usePollinationsImage } from "@pollinations/react";
+import { usePollinationsText, usePollinationsImage, PollinationsMarkdown } from "@pollinations/react";
 
 export default function Home() {
 
@@ -12,6 +12,7 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         {text ? <p>{text}</p> : <p>Loading...</p>}
         {imageUrl ? <img src={imageUrl} /> : <p>Loading...</p>}
+        <PollinationsMarkdown seed={42}>Create beautiful poem about a Pollinating in markdown</PollinationsMarkdown>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
