@@ -12,7 +12,9 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         {text ? <p>{text}</p> : <p>Loading...</p>}
         {imageUrl ? <img src={imageUrl} /> : <p>Loading...</p>}
-        <PollinationsMarkdown seed={42}>Create beautiful poem about a Pollinating in markdown</PollinationsMarkdown>
+        <PollinationsMarkdown>
+          Write about the blue see in markdown and in your response embed an image with the text as prompt using ![Alt text](https://pollinations.ai/p/[prompt])
+        </PollinationsMarkdown>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
